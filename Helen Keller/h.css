@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url('bgf.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: antiquewhite;
+    height: 100vh;
+}
+.middle{
+    width: 25%;
+}
+.right{
+    width: 15%;
+    background-color: transparent;
+    border: dotted black;
+    transition: height .2s;
+    }
+.right ul{
+    list-style: none;
+}
+.right ul li{
+
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 3px;
+    font-size: 23px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.right ul li a{
+    color: black;
+    text-decoration: none; 
+    font-family: 'Poppins';
+}
+.right ul li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -0px;
+  left: -2px;
+  transform: scaleX(0);
+  box-shadow:
+     0 2px 0 #fdf8f9;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.right ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.content{
+    position: relative;
+    padding: 15px;
+    top: -45%;
+    right: -6%;
+    background: transparent;
+    box-shadow: 0 0 5px rgb(10, 13, 13),0 0 25px rgb(8, 11, 11);
+    animation: blink 1.5s linear infinite;
+}
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .75;
+    }
+    0%{
+        opacity: 1;
+    }
+}
+.content:hover{
+    box-shadow: 0px 2px 2px rgb(9, 9, 9);
+}
+.hk{
+    background: transparent;
+    border: none;
+}
+.hel{
+    align-content: center;
+    width:400px;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    border-radius: 50%;
+    bottom:  50px;
+    box-shadow:0 0 5px rgb(10, 13, 13),0 0 25px rgb(8, 11, 11);
+}
+.left{
+    width: 25%;
+}
+.left h1{
+    text-align: center;
+    font-size: 38px;
+    margin: 8px;
+    padding: 5px;
+    cursor: pointer;
+    top:  500px;
+}
+.second{
+    display: flex;
+}
+.pic img{
+    position: relative;
+    width:100%;
+    height: 500px;
+    margin: 100px 15px 10px 0px;
+}
+.top{
+    position: absolute;
+    border: none;
+    display: inline-block;
+    color: antiquewhite;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    top:180%;
+    left:92%;
+    box-shadow:0 0 5px rgb(243, 245, 245),0 0 25px rgb(250, 252, 252);
+}
+.top:hover{
+    background: #f0d588;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24) ;
+}
+.para{
+    
+    border-radius: 5%;
+    padding: 20px;
+    width: 75%;
+    height: 85vh;
+    margin: 45px;
+}
+.para p{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: .3px;
+    text-align: justify;
+}
+.third{
+    display: flex;
+    width: 100%;
+    height:100vh;
+}
+.third p{
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin: 5px;
+    padding: 40px;
+}
+.tpic img{
+    width: 400px;
+    height: 550px;
+    margin: 20px 10px 10px 50px;
+}
+.tpara{
+    margin: 30px;
+}
+.honors{    
+    height: 100vh;
+    background: url(bgh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.honors img{
+    width: 300px;
+    height: 400px;
+    margin:40px 30px 30px 40px;
+    padding: 25px;
+}
+.honors img:hover{
+    border: 2px solid transparent;
+    transform: translateY(17px);
+    cursor: pointer;
+}
+.top1{
+    position: absolute;
+    border: none;
+    display: inline-block;
+    color: antiquewhite;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow:0 0 2px rgb(10, 13, 13),0 0 5px rgb(8, 11, 11);
+}
+.top1:hover{
+    background: #f0d588;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24) ;
+}
+.top2{
+    position: absolute;
+    border: none;
+    right:25%;
+    display: inline-block;
+    color: antiquewhite;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.top2:hover{
+    background: #f0d588;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24) ;
+}
+
+.quotes{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    padding: 40px;
+    justify-content: space-around;
+    background: url('bgq.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.quotes p{
+    font-size: 18px;
+    font-family: 'Poppins';
+    padding: 25px;
+}
+.eight p{
+    font-size: 17px;
+}
+.quotes>*{
+    background: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24) ;
+    height: 200px;
+    margin: 5px;
+    width: 400px;
+    flex: 1 1 1 50px;
+    justify-content: center;
+}
+.one:hover{
+    background: url(oneq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:transparent;
+}
+.two:hover{
+    background: url(twoq.jpg);
+    background-size: contain;
+    border: none;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    color:transparent;
+}
+.three:hover{
+    background: url(threeq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:transparent;
+}
+.four:hover{
+    background: url(fourq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:transparent;
+}
+.five:hover{
+    background: url(fiveq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:transparent;
+}
+.six:hover{
+    background: url(sixq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:transparent;
+}
+.seven:hover{
+    background: url(sevenq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:transparent;
+}
+.eight:hover{
+    background: url(eightq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:transparent;
+}
+.books{
+    background-image: url(bgb.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin: 25px;
+    padding: 50px;
+    justify-content: space-between; 
+    
+}
+.books>*{
+    background: aliceblue;
+    height: 300px;
+    margin:5px 200px 50px 20px;
+    padding: 5px;
+    width: 300px;
+    flex: 1 1 ;
+    align-items: center;
+    justify-content: center;
+}
+.ib{
+    width: 200px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+.books a{
+    text-decoration: none;
+    padding: 5px;
+    font-style: italic;
+    border: black;
+    font-size: 18px;
+}
+.books>*:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24) ;
+}
+.books a:hover{
+    border: bisque;
+    color: black;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+}
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 100vh;
+    margin: 25px;
+    background: url(bgm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.movies>*{
+    display: flex;
+    flex-wrap: wrap;
+    margin:55px 200px 50px 20px;
+    padding: 5px;
+    flex: 1 1 ;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease 0s;
+}
+.ib1{
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}  
+.movies>*:hover{
+    transform: scale(1.1);
+}
+.movies a{
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 5px;
+    color: black;
+    text-shadow: 1px 1px 1px #eadddd;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+.movies a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
